@@ -7,4 +7,9 @@ public class ListCommand implements Command{
     public String getName() {
         return Constants.COMMAND_LIST;
     }
+
+    @Override
+    public void handle() {
+        System.out.println("Command " + getName() + " Worked");
+    }
 }

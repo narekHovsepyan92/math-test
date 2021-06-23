@@ -7,4 +7,9 @@ public class StartCommand implements Command {
     public String getName() {
         return Constants.COMMAND_START;
     }
+
+    @Override
+    public void handle() {
+        System.out.println("Command " + getName() + " Worked");
+    }
 }

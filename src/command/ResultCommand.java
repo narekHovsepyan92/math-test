@@ -7,4 +7,9 @@ public class ResultCommand implements Command{
     public String getName() {
         return Constants.COMMAND_RESULT;
     }
+
+    @Override
+    public void handle() {
+        System.out.println("Command " + getName() + " Worked");
+    }
 }
