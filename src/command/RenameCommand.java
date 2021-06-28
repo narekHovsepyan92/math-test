@@ -8,4 +8,9 @@ public class RenameCommand implements Command{
     public String getName() {
         return Constants.COMMAND_RENAME;
     }
+
+    @Override
+    public void handle() {
+        System.out.println("Command " + getName() + " Worked");
+    }
 }

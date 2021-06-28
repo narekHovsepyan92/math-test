@@ -4,4 +4,6 @@ public interface Command {
 
     String getName();
 
+    void handle();
+
 }

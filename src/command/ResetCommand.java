@@ -7,4 +7,9 @@ public class ResetCommand implements Command{
     public String getName() {
         return Constants.COMMAND_RESET;
     }
+
+    @Override
+    public void handle() {
+        System.out.println("Command " + getName() + " Worked");
+    }
 }
