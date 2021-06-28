@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ScannerProvider {
 
-    private Scanner getScanner() {
+    public Scanner getScanner() {
         return new Scanner(System.in);
     }
 }
