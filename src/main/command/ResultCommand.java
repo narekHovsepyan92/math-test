@@ -1,12 +1,11 @@
-package command;
+package main.command;
 
-import data.Constants;
+import main.data.Constants;
 
-public class RenameCommand implements Command{
-
+public class ResultCommand implements Command{
     @Override
     public String getName() {
-        return Constants.COMMAND_RENAME;
+        return Constants.COMMAND_RESULT;
     }
 
     @Override

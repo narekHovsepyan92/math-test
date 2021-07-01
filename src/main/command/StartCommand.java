@@ -1,6 +1,8 @@
-package command;
+package main.command;
 
-import data.Constants;
+import main.User;
+import main.UserProvider;
+import main.data.Constants;
 
 import java.util.Scanner;
 
@@ -21,6 +23,7 @@ public class StartCommand implements Command {
     public void handle() {
         System.out.println("Hello. Enter name");
         String name = scanner.next();
-        System.out.println("Name is " + name);
+        User user = new User(name);
+        UserProvider.setUser(user);
     }
 }

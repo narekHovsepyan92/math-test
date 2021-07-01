@@ -1,4 +1,6 @@
-import command.*;
+package main;
+
+import main.command.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;

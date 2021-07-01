@@ -1,6 +1,6 @@
-package command;
+package main.command;
 
-import data.Constants;
+import main.data.Constants;
 
 public class ListCommand implements Command{
     @Override
