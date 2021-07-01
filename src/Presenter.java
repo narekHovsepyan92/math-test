@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 public class Presenter {
 
-    ArrayList<Command> commands;
+    private final ArrayList<Command> commands;
 
-    private Presenter(ArrayList<Command> commands) {
+    public Presenter(ArrayList<Command> commands) {
         this.commands = commands;
     }
 
-    private void onUserCommand(String command) {
-        System.out.println("User command " + command);
+    public void onUserCommand(String command) {
+        for(Command c : commands) {
+            if (c.getName().equals(command)) {
+                c.handle();
+                break;
+            }
+        }
     }
 }
