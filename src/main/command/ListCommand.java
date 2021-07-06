@@ -2,7 +2,9 @@ package main.command;
 
 import main.data.Constants;
 
-public class ListCommand implements Command{
+import java.util.ArrayList;
+
+public class ListCommand implements Command {
     @Override
     public String getName() {
         return Constants.COMMAND_LIST;
@@ -10,6 +12,9 @@ public class ListCommand implements Command{
 
     @Override
     public void handle() {
-        System.out.println("Command " + getName() + " Worked");
+        ArrayList<String> commands = Constants.getCommandList();
+        for (String s : commands) {
+            System.out.println(s);
+        }
     }
 }

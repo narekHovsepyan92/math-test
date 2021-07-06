@@ -12,12 +12,13 @@ public class Presenter {
         this.commands = commands;
     }
 
-    public void onUserCommand(String command) {
+    public void onUserCommand(String command) throws Exception {
         for(Command c : commands) {
             if (c.getName().equals(command)) {
                 c.handle();
-                break;
+                return;
             }
         }
+        throw new Exception("No command found " + command);
     }
 }

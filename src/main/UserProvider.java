@@ -8,7 +8,6 @@ public class UserProvider {
         return user;
     }
 
-    public static void setUser(User user) {
-        UserProvider.user = user;
-    }
+    public static void setUser(User user) { UserProvider.user = user;}
+
 }

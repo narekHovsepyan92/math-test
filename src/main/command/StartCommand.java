@@ -25,5 +25,6 @@ public class StartCommand implements Command {
         String name = scanner.next();
         User user = new User(name);
         UserProvider.setUser(user);
+        System.out.println("User name now is " + user.getName());
     }
 }

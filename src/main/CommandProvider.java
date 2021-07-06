@@ -10,7 +10,7 @@ public class CommandProvider {
     public static ArrayList<Command> getCommandList(Scanner scanner) {
         ArrayList<Command> command = new ArrayList<>();
         ListCommand listCommand = new ListCommand();
-        RenameCommand renameCommand = new RenameCommand();
+        RenameCommand renameCommand = new RenameCommand(scanner);
         ResetCommand resetCommand = new ResetCommand();
         ResultCommand resultCommand = new ResultCommand();
         StartCommand startCommand = new StartCommand(scanner);
