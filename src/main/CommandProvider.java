@@ -13,7 +13,7 @@ public class CommandProvider {
         RenameCommand renameCommand = new RenameCommand(scanner);
         ResetCommand resetCommand = new ResetCommand();
         ResultCommand resultCommand = new ResultCommand();
-        StartCommand startCommand = new StartCommand(scanner);
+        StartCommand startCommand = new StartCommand(scanner, QuestionProvider.getQuestions());
         command.add(listCommand);
         command.add(renameCommand);
         command.add(resetCommand);
