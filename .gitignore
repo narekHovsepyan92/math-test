@@ -1,15 +1,3 @@
 /out/production/math_test/Main.class
 .idea
-/out/production/math_test/main/command/Command.class
-/out/production/math_test/main/CommandProvider.class
-/out/production/math_test/main/data/Constants.class
-/out/production/math_test/main/command/ListCommand.class
-/out/production/math_test/main/Main.class
-/out/production/math_test/main/Presenter.class
-/out/production/math_test/main/command/RenameCommand.class
-/out/production/math_test/main/command/ResetCommand.class
-/out/production/math_test/main/command/ResultCommand.class
-/out/production/math_test/main/ScannerProvider.class
-/out/production/math_test/main/command/StartCommand.class
-/out/production/math_test/main/User.class
-/out/production/math_test/main/UserProvider.class
+.out/
