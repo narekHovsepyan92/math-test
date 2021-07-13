@@ -1,5 +1,6 @@
 package main.command;
 
+import main.AnswersCount;
 import main.User;
 import main.UserProvider;
 import main.data.Constants;
@@ -14,9 +15,6 @@ public class StartCommand implements Command {
 
     private final ArrayList<Question> questions;
 
-    private int correctAnswer;
-
-    private int wrongAnswer;
     public StartCommand(Scanner scanner, ArrayList<Question> questions) {
         this.scanner = scanner;
         this.questions = questions;
@@ -41,9 +39,9 @@ public class StartCommand implements Command {
             System.out.println(q.getName());
             String answer = scanner.next();
             if(answer.equals(q.getAnswer())){
-                correctAnswer ++;
+                AnswersCount.trueAnswers++;
             } else{
-                wrongAnswer ++;
+                AnswersCount.wrongAnswers++;
             }
         }
         System.out.println("Test finished ");
